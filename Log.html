@@ -1,0 +1,109 @@
+﻿<html>
+	<head> 
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" > 
+		<link rel="stylesheet" type="text/CSS" href="myStyle.CSS"/>
+   		<title>Log in for document</title>
+		<script type="text/javascript">
+                        var timerID = null;
+                        var timerRunning = false;
+
+                        function stopclock() {
+                            if (timerRunning)
+                                clearTimeout(timerID);
+                            timerRunning = false;
+                        }
+
+                        function showtime() {
+                            var now = new Date();
+                            var hours = now.getHours();
+                            var minutes = now.getMinutes();
+                            var seconds = now.getSeconds()
+
+                            var timeValue = "" + ((hours > 12) ? hours - 12 : hours)
+                            timeValue += ((minutes < 10) ? ":0" : ":") + minutes
+                            timeValue += ((seconds < 10) ? ":0" : ":") + seconds
+                            timeValue += (hours >= 12) ? " P.M." : " A.M."
+			    
+                            document.clock.face.value = timeValue;
+			    window.status = timeValue;
+
+                            
+                            timerID = setTimeout("showtime()", 1000);
+                            timerRunning = true;
+                        }
+
+                        function startclock() {
+                            // Make sure the clock is stopped
+                            stopclock();
+                            showtime();
+                        }
+
+        </script>
+	</head>
+        <body onload="startclock(); timerONE=window.setTimeout" bgcolor="#FFBCC" dir="rtl" >  
+	
+   
+  	<table border="5">
+    	<tr width="2048px" bgcolor="#FFAACC"><font class="item1">
+	
+		<font size ="3" color ="red" face ="tahoma , Arial"> <center><br>برای مشاهده کدها و داکیومنت ها باید نام کاربری و رمز عبور را به درستی وارد کنید☺</center><br></font>	
+	
+    </tr>
+
+
+<tr width="100%"><background class="item"><font class="item1">
+	<td bgcolor="#FFFFCC" valign="top" width="12%" ><a href="Home.html"><br><br><br><br><center>بازگشت به صفحه اصلی</center></a><br>
+	</background></font>
+	</td>
+<td width="2048px">
+<form>
+<table>
+ 
+<tr width="2048px">
+
+ <td width="40%"><pre>
+
+
+
+
+                نام کاربری:          <input type="text" value="" name="username"/><br></pre>
+       </td>
+    </tr>
+    <tr>
+	
+      <td width="40%"><pre>
+         	رمز عبور:            <input type="password" value="" name="password"/></pre>
+      </td>
+    </tr>
+  
+    <tr>
+      
+        
+      
+      <td width="25%"><pre>
+                                                   <input type="submit" value="ورود" name="Submit" />        <a href="Document.html">دسترسی به داکیومنت بدون رمز عبور</a></pre><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+      </td>   
+
+    </tr>
+
+	</background></font>	
+</table>
+</form>   
+
+
+
+
+
+     <tr bgcolor="#FFFFCC"><td colspan="2"><background class="item"><font class="item1"><center>Designed by Elham Soltani@2018</center><br>
+     <center>
+                     <form name="clock" onsubmit="0">
+                     <input type="text" name="face" size="13" value="" >
+        </center>
+     </background></font>
+	</td>
+     </tr>
+    </table>
+
+   </body>
+
+</html>

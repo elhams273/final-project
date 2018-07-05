@@ -1,0 +1,566 @@
+﻿<html>
+	<head>
+          <link rel="stylesheet" type="text/CSS" href="myStyle.CSS"/>
+          <title>My Document</title>
+          <script type="text/javascript">
+                        var timerID = null;
+                        var timerRunning = false;
+
+                        function stopclock() {
+                            if (timerRunning)
+                                clearTimeout(timerID);
+                            timerRunning = false;
+                        }
+
+                        function showtime() {
+                            var now = new Date();
+                            var hours = now.getHours();
+                            var minutes = now.getMinutes();
+                            var seconds = now.getSeconds()
+
+                            var timeValue = "" + ((hours > 12) ? hours - 12 : hours)
+                            timeValue += ((minutes < 10) ? ":0" : ":") + minutes
+                            timeValue += ((seconds < 10) ? ":0" : ":") + seconds
+                            timeValue += (hours >= 12) ? " P.M." : " A.M."
+			    
+                            document.clock.face.value = timeValue;
+			    window.status = timeValue;
+
+                            
+
+                            timerID = setTimeout("showtime()", 1000);
+                            timerRunning = true;
+                        }
+
+                        function startclock() {
+                            // Make sure the clock is stopped
+                            stopclock();
+                            showtime();
+                        }
+
+        </script>
+                
+        </head>
+        <body onload="startclock(); timerONE=window.setTimeout"  bgcolor="#FFBBCC" dir="rtl" >  
+	
+   
+  	<table border="5">
+    	<tr width="2048px" bgcolor="#FFAACC"> <font class="item1">
+		<font size ="3" color ="red" face ="tahoma , Arial"> <center><br>مستند ساختار وب سایت همراه با کد ها☺</center><br></font>	
+	
+    </tr>
+
+
+<tr width="100%"><background class="item"> <font class="item1">
+	<td bgcolor="#FFFFCC" valign="top" width="12%" ><a href="Home.html"><br><br><br><br><center>بازگشت به صفحه اصلی</center></a><br>
+	</background></font>
+	</td>
+
+
+
+  	
+    	
+   
+	
+	<td width="2048px">
+	<br>	<br>&nbsp; &nbsp; <background class="item2"><font class="item"> طراحی این وب سایت با زبان HTML , PHP می باشد.که بااستفاده از کد های HTML قالب کلی سایت طراحی می  گردد.تمام کد ها در داخل تگ <xmp></html></html></xmp> نوشته می شود.تگ title عنوان وبسایت را مشخص می کند.تگ head نیز حاوی <br>&nbsp;&nbsp;&nbsp; اطلاعاتی در خصوص صفحه می باشد.بدنه صفحه نیز در تگ body نوشته می شود.کد های php را نیز هم می توان به صورت فایل جداگانه تعریف کرد و هم می توان در قسمت بدنه(body) کد های html نوشت.  <br>
+	<br>
+	&nbsp;&nbsp;&nbsp; <font size="3" color="brown" face="tahoma">◙ &nbsp;صفحه ی Home صفحه آغازین وبسایت است  که به توضیح کد های آن می پردازم:</font><br>
+<font size ="3" color ="purple" face ="tahoma , Arial" style="direction:ltr;">		
+ <xmp>
+	 <html>
+  	 <title>My Page</title>
+  	 <script type="text/javascript">
+                        var timerID = null;
+                        var timerRunning = false;
+
+                        function stopclock() {
+                            if (timerRunning)
+                                clearTimeout(timerID);
+                            timerRunning = false;
+                        }
+
+                        function showtime() {
+                            var now = new Date();
+                            var hours = now.getHours();
+                            var minutes = now.getMinutes();
+                            var seconds = now.getSeconds()
+
+                            var timeValue = "" + ((hours > 12) ? hours - 12 : hours)
+                            timeValue += ((minutes < 10) ? ":0" : ":") + minutes
+                            timeValue += ((seconds < 10) ? ":0" : ":") + seconds
+                            timeValue += (hours >= 12) ? " P.M." : " A.M."
+			    
+                            document.clock.face.value = timeValue;
+			    window.status = timeValue;
+
+                            
+
+                            timerID = setTimeout("showtime()", 1000);
+                            timerRunning = true;
+                        }
+
+                        function startclock() {
+                            // Make sure the clock is stopped
+                            stopclock();
+                            showtime();
+                        }
+
+        </script>
+	</head>
+        <body onload="startclock(); timerONE=window.setTimeout" bgcolor="#FFBCC" dir="rtl" >  
+	  
+   
+  	<table border="5">
+    	<tr bgcolor="#FFFFCC"><font class="item1"><td>
+		<img src="Qom_University.jpg" alt="" width="160" heigh="145"></td>
+
+		<td width="2048px"><font size ="3" color ="red" face ="tahoma , Arial"> <center> صفحه شخصی الهام سلطانی</center><br></font>
+		 &nbsp;<font size ="1" color ="pink" face ="tahoma , Arial"> <center>دانشجوی کارشناسی دانشگاه قم</center><br></font>
+    		</background></font>
+	</td>
+        </tr>
+        <tr width="100%"><background class="item"><font class="item1">
+	<td bgcolor="#FFFFCC" valign="top" width="10%"><a href="Log in.html"><br><br><br><center>مستند</center></a><br>
+	</background></font>
+	</td>
+	</br>	<br>	<br>	<br>
+	<td width="2048px">
+	</br>	<br>&nbsp; &nbsp; <background class="item2"><font class="item">  ☺☺☺ خوش آمدید ☺☺☺ <br>
+	<br>&nbsp;&nbsp;&nbsp; من الهام سلطانی دانشجوی کارشناسی مهندسی کامپیوتر گرایش نرم افزار دانشگاه قم  می باشم. <br>
+		&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+	<br>
+	&nbsp;&nbsp;&nbsp; ◙ &nbsp;حوزه هایی که در طول تحصیل در آن ها فعالیت کردم:<br>
+	<ul>
+		&nbsp; <li>برنامه نویسی جاوا</li>
+		&nbsp; <li>ساخت بازی های دو بعدی و سه بعدی با موتور یونیتی</li>
+		&nbsp;<li>تولید اپلیکیشن اندروید با مو ضوع شعر های کوتاه</li>
+	</ul><br><br><br><br><br><br><br><br>
+	<center>
+	<fieldset style="width:300px;">
+	<legend style="font-weight:bold;color:#0C3;">فرم تماس با ما</legend>
+	<p>برای کامنت گذاری پر کردن تمام فیلدها الزامی است.</p>
+	<form method="Post" action="mail.php" style="direction:rtl;">
+	<label style="display:block;margin:3px 0;">نام و نام خانوادگی:</label><input name="Name" type="text" /><br>
+	<label style="display:block;margin:3px 0;">پست الکترونیک:</label><input name="E-Mail" type="text" dir="ltr" /><br>
+	<label style="display:block;margin:3px 0;">عنوان نظر:</label><input name="Title" type="text" /><br>
+	<label style="display:block;margin:3px 0;">پیام:</label><textarea name="Message" cols="25" rows="6" ></textarea><br>
+	<br>
+	<input type="submit" value=" نظرارسال" style="font-family:tahoma;" /> <input type="reset" value="از نو نوشتن" style="font-family:tahoma;" />
+	</form>
+	</fieldset>
+	</center>
+	<br><br><br><br>
+	</td> 
+        </tr>
+	</background></font>
+	<tr bgcolor="#FFFFCC"><td colspan="2"><background class="item"><font class="item1"><center>Designed by Elham Soltani@2018<br> <center>
+                     <form name="clock" onsubmit="0">
+                     <input type="text" name="face" size="13" value="" >
+        </center>
+        </background></font>
+	</td>
+        </tr>
+     
+        </table>
+        </body>
+
+  	 </html>
+
+	</xmp>
+	</font>
+
+		
+
+
+		<ul>
+		&nbsp; <li>در قسمت title عنوان صفحه (My Page) مشخص شده </li>
+		&nbsp; <li> آنچه در قسمت body نوشته می شود بدنه و محتویات صفحه می باشد و برای تعیین رنگ background صفحه و راست چین کردن آن (rtl نشان دهنده ی right to left)، در تگ آغازین body این کد نوشته شده است.</li>
+		&nbsp;<li>جدول با تگ<xmp ><table></table></xmp> مشخص می شود.هر ردیف در جدول با تگ <xmp><tr></tr></xmp> وهر سلول با  تگ <xmp><td></td></xmp> تعیین می گردد.با مقدار دهی به تگ آغازین جدول به خطوط جدول ضخامت داده می شود</li>
+
+
+		&nbsp; <li>در بخش بعدی کد برای سطر اول جدول background و فونت خاصی که در فایل css تعریف شده،تعیین می گردد.
+		<xmp><tr bgcolor="#FFFFCC"><font class="item1"></xmp></li>
+		&nbsp;<li>در دو سطر بعدی کد برای سلول بعدی که در همان ردیف اول قرار دارد نوشته شده بعد از تعیین پهنا(width) برای سلول،سایز(size) ،  رنگ نوشته(color) و فونت مد نظر(face) برای ایجاد تنظیمات خاص برای متن در تگ <font> نوشته می شود.آنچه در تگ<br><xmp><center></center></xmp> نوشته می شود در وسط سلول نمایش داده می شود و از تگ<xmp><br></xmp> یا<xmp></br></xmp>بعنوان enter استفاده می شود و از <xmp>;nbsp&</xmp>برای space استفاده می شود.</li>
+		&nbsp; <li>ردیف بعدی جدول نیز دارای دو ستون است که برای ستون سمت راست  علاوه بر تنظیم رنگ background و فونت لینکی به <xmp>log in.html</xmp> با کد زیر تعریف شده است.
+		<xmp><a href="آدرس لینک مورد نظر<"عبارتی که در صفحه نمایش داده می شود</a></xmp></li>
+		&nbsp; <li>از تگ <xmp><ul></ul></xmp> برای لیست کردن غیر شمارشی استفاده می گردد که هر مورد از لیست باید درون تگ <xmp><li></li></xmp>نوشته شود.</li>
+		&nbsp; <li>تگ <xmp><fieldset></fieldset></xmp> علاوه بر گروه بندی عناصر مرتبط در یک فرم،یک چارچوب اطراف عناصر مرتبط رسم می کند. </li>
+		&nbsp; <li>تگ <xmp><legend></legend></xmp> یک عنوان یا caption برای عنصر <xmp><fieldset></fieldset></xmp> مشخص می کند و برای عنوان می توان ضخامت و رنگ قلم را نیز تعیین نمود. </li>
+		&nbsp; <li>از تگ <xmp><p></p></xmp> برای پاراگراف بندی متن استفاده می شود.</li>
+		&nbsp; <li>فرم ها در html با تگ <xmp><form></form></xmp> ساخته می شوند.اجزای یک فرم می تواند textfield،radio button،check box و drop down menu باشد.همچنین یک فرم نیازمند یک دکمه(submit) برای ارسال اطلاعتش به مقصد می باشد.</li>
+		&nbsp; <li>چون می خواهیم از کدهای php استفاده کنیم این دیدگاه ها را ارسال کنیم پس در تگ آغازین فرم دو مقدار method و action تعریف می گردد.که در قسمت method نوع ارسال داده و در action آدرس فایلی که اطلاعات را می خواهیم به آن ارسال کنیم قرار می گیرد.</li>
+		&nbsp; <li>در چهار خط بعدی کد ، چهار lable تعریف شده که هر یک با رنگ مشکی و به فاصله ی داخلی 3px از کنار فرم می باشد</li>
+		&nbsp; <li>همچنین سه مورد اول یک مقدار ورودی را از کاربر دریافت می کند که چون هر سه مقدار از نوع متن هستند در نتیجه type از نوع text می باشد.</li>
+		&nbsp; <li>با استفاده از تگ <xmp><textarea></textarea></xmp> یک فضا برای نوشتن متن ایجاد می کنیم که این تگ دارای دو ویژگی col و row می باشد ، که اندازه ی این فضا را مشخص می کند و یک خصوصیت name که به فضای متن نام اختصاص می دهد.</li>
+		&nbsp; <li>درنهایت نیز دو دکمه،یکی برای ارسال ایمیل و درواقع ارسال اطلاعات فیلدها به مقصد و دیگری برای reset تمام فیلدها تعریف شده است .</li>
+		&nbsp;<li>در نهایت سطر آخر برای جدول ایجاد شده که برای بک گراند از کلاس item که در فایل css تعریف شده و برای فونت نیز از کلاس item1 که در فایل css تعریف شده ،استفاده شده و در نهایت یک متن در وسط این سلول نمایش داده می شود.</li>
+		&nbsp;<li>متغیر colspan تعداد خانه هایی که این خانه جدول پوشش می دهد را مشخص می کند.</li>
+		</ul>
+		<br>&nbsp;&nbsp;&nbsp;&nbsp;
+		֎وقتی روی لینک مستند در سمت راست صفحه کلیک شود ، یک صفحه برای لاگین باز می شود که در صورت صحیح بودن رمز کاربری و کلمه عبور به صفحه جدیدی که توضیح کدهای این پروژه می باشد،میتوان دسترسی پیدا کرد.
+
+		<br><br>&nbsp;&nbsp;&nbsp;<font size="3" color="brown" face="tahoma"> ◙ &nbsp;توضیح کدهای صفحه ی لاگین:</font><br>
+		<font size ="3" color ="purple" face ="tahoma , Arial" align="right">
+		<xmp>
+		<html>
+			<head> 
+			<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" > 
+   			<title>Log in for document</title>
+			<script type="text/javascript">
+                        var timerID = null;
+                        var timerRunning = false;
+
+                        function stopclock() {
+                            if (timerRunning)
+                                clearTimeout(timerID);
+                            timerRunning = false;
+                        }
+
+                        function showtime() {
+                            var now = new Date();
+                            var hours = now.getHours();
+                            var minutes = now.getMinutes();
+                            var seconds = now.getSeconds()
+
+                            var timeValue = "" + ((hours > 12) ? hours - 12 : hours)
+                            timeValue += ((minutes < 10) ? ":0" : ":") + minutes
+                            timeValue += ((seconds < 10) ? ":0" : ":") + seconds
+                            timeValue += (hours >= 12) ? " P.M." : " A.M."
+			    
+                            document.clock.face.value = timeValue;
+			    window.status = timeValue;
+
+                            
+
+                            timerID = setTimeout("showtime()", 1000);
+                            timerRunning = true;
+                        }
+
+                        function startclock() {
+                            // Make sure the clock is stopped
+                            stopclock();
+                            showtime();
+                        }
+
+       			 </script>
+			</head>
+      	 		 <body onload="startclock(); timerONE=window.setTimeout" bgcolor="#FFBCC" dir="rtl" >  
+	
+   
+  			<table border="5">
+    			<tr width="2048px" bgcolor="#FFAACC"><font class="item1">
+	
+			<font size ="3" color ="red" face ="tahoma , Arial"> 
+			<center><br>برای مشاهده کدها و داکیومنت ها باید نام کاربری و رمز عبور را به درستی وارد کنید☺</center><br></font>	
+	
+  			  </tr>
+
+
+			<tr width="100%"><background class="item"><font class="item1">
+			<td bgcolor="#FFFFCC" valign="top" width="12%" >
+			<a href="Home.html"><br><br><br><br><center>بازگشت به صفحه اصلی</center></a><br>
+			</background></font>
+			</td>
+			<td width="2048px">
+			<form>
+			<table>
+ 
+			<tr width="2048px">
+
+ 			<td width="40%"><pre>
+
+
+
+
+           	     نام کاربری:          <input type="text" value="" name="username"/><br></pre>
+     		  	</td>
+   			 </tr>
+  			  <tr>
+	
+      			<td width="40%"><pre>
+         		رمز عبور:            <input type="password" value="" name="password"/></pre>
+      			</td>
+    			</tr>
+  
+    			<tr>
+      
+        
+      
+    			  <td width="25%"><pre>
+                                              <input type="submit" value="ورود" name="Submit" /><a href="Document.html">دسترسی به داکیومنت بدون رمز عبور</a></pre>
+			<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+     			 </td>   
+
+   			 </tr>
+
+			</background></font>	
+			</table>
+			</form>   
+
+
+
+
+
+     			<tr bgcolor="#FFFFCC"><td colspan="2"><background class="item"><font class="item1"><center>Designed by Elham Soltani@2018</center><br>
+    			 <center>
+                     <form name="clock" onsubmit="0">
+    	                <input type="text" name="face" size="13" value="" >
+      			 </center>
+  		   </background></font>
+			</td>
+   		  </tr>
+   		 </table>
+
+   		</body>
+
+		</html>
+		</xmp>
+		</font>
+
+		<ul>
+		&nbsp; <li>چون در این صفحه نیازمند یک فرم برای رمز عبور و نام کاربری هستیم ، در نتیجه در بخش head کدهای  html  باید یکسری attributeها و مشخصه ها را اضافه کنیم.<br>همچنین بخش title نیز در همین قسمت تعیین می گردد که title این صفحه Log in for document می باشد.</li>
+		&nbsp; <li>چون می خواهیم از style sheet خارجی استفاده کنیم پس در قسمت head فایل html با استفاده از تگ لینک این فایل را معرفی می کنیم.</li>
+		&nbsp; <li>آنچه در قسمت body نوشته می شود بدنه و محتویات صفحه می باشد و برای تعیین رنگ background کل صفحه و راست چین کردن آن (rtl نشان دهنده ی right to left)، در تگ آغازین body این کد نوشته شده است. </li> 
+		&nbsp; <li>در تگ آغازین جدول نیز با استفاده از attribute ای به نام borderضخامت لازم به خطوط جدول اعمال شده است.</li>
+		&nbsp; <li>برای بالای صفحه یک بخش کاملا جدا با پهنا(width="2048px")ایجاد شده که در اینجا به جای px می توان از درصد نی استفاده کرد.یک رنگ بک گراند و فونتی که در فایل css تعریف شده استفاده می گردد.</li>
+		&nbsp; <li>برای نوشته موجود در این بخش نیز یک رنگ ،فونت و سایز خاص تعریف شده.همچنین علت استفاده از دو فونت مختلف این است که اگر سیستمی یکی از این فونت ها را ساپورت نکرد از فونت دیگری استفاده شود.متن مورد نظر نیز با استفاده از تگ <xmp><center></center></xmp> در میان این ردیف قرار می گیرد.</li>
+		&nbsp; <li>در خط بعدی کد ستون سمت راست جدول جدید که در داخل جدول قبلی است و حاوی لینکی برای بازگشت به صفحه اصلی است،می باشد.که مقدار valign برای محل قرار گیری این لینک می باشد.(سایر قسمت های این خط از کد در بخش های قبلی توضیح داده شده است.)</li>
+		&nbsp; <li>در بخش بعدی کد چون می خواهیم از فرم استفاده کنیم در استفاده از فرم نیازمند کد های php هستیم ، پس در تگ آغازین فرم دو مقدار method که نوع ارسال داده را مشخص می کند و می تواند یکی از دو مقدار get یا post را داشته باشد و action که آدرس فایلی است که می خواهیم اطلاعات را به آن ارسال کنیم.</li>
+		&nbsp; <li>در این جدول یک ستون با پهنای کل صفحه با سه سلول داریم،که پهنای سلول اول چهل درصد  می باشد و از تگ <xmp><pre></pre></xmp> برای آنکه چندین space و enter را تشخیص دهد استفاده میشود.</li>
+		&nbsp; <li>از تگ input برای دریافت مقادیر از کاربر استفاده می شود که Type نوع ورودی،Value یک مقدار پیش فرض برای ورودی وnameنام ورودی را مشخص می کند.</li>
+		&nbsp; <li>در بخش بعدی برای دو مقدار ورودی نام کاربری و رمز عبور تعریف شده که،type برای نام کاربری text و برای رمز عبور password میباشد تا رمز تایپ شده به صورت دایره تایپ شود.</li>
+		&nbsp; <li>در نهات یک دکمه برای فرم ایجاد شده که چون این ورودی دکمه است پس باید type آن submit باشد.</li>
+		&nbsp; <li>سلول انتهایی جدول نیز در توضیح کدهای Home توضیح داده شده است.</li>
+		</ul>
+
+		<br><br>&nbsp;&nbsp;&nbsp;<font size="3" color="brown" face="tahoma"> ◙ &nbsp;توضیح کدهای جاوا اسکریپت:</font><br>
+		<br>&nbsp;&nbsp;از کدهای جاوا اسکریپت برای تعاملی کردن HTML و ایجاد صفحات وب تعاملی استفاده می شود.<br>
+		<br>&nbsp;&nbsp;از کدهای جاوا اسکریپت برای نمایش ساعت کامپیوتر در تمامی صفحات وبسایت استفاده شده که چون تمام این کد ها یکسان است،در نتیجه یکبار کدها را توضیح میدهم<br>
+		<font size ="3" color ="purple" face ="tahoma , Arial" align="right">
+		<xmp>
+		<script type="text/javascript">
+                        var timerID = null;
+                        var timerRunning = false;
+
+                        function stopclock() {
+                            if (timerRunning)
+                                clearTimeout(timerID);
+                            timerRunning = false;
+                        }
+
+                        function showtime() {
+                            var now = new Date();
+                            var hours = now.getHours();
+                            var minutes = now.getMinutes();
+                            var seconds = now.getSeconds()
+
+                            var timeValue = "" + ((hours > 12) ? hours - 12 : hours)
+                            timeValue += ((minutes < 10) ? ":0" : ":") + minutes
+                            timeValue += ((seconds < 10) ? ":0" : ":") + seconds
+                            timeValue += (hours >= 12) ? " P.M." : " A.M."
+			    
+                            document.clock.face.value = timeValue;
+			    window.status = timeValue;
+
+                            
+
+                            timerID = setTimeout("showtime()", 1000);
+                            timerRunning = true;
+                        }
+
+                        function startclock() {
+                            // Make sure the clock is stopped
+                            stopclock();
+                            showtime();
+                        }
+
+        </script>
+                
+		</xmp>
+		</font>
+		<ul>
+		&nbsp; <li>کدهای جاوا اسکریپت درون تگ <xmp><script type=”text/javascript”></script></xmp> و داخل تگ <xmp><head></head></xmp>کدهای HTML نوشته می شود.</li>
+		&nbsp; <li>در ابتدا دو متغیر تعریف شده که اولی دارای مقدار null و دیگری دارای مقدار false می باشد.</li>
+		&nbsp; <li>در جاوا اسکریپت می توان از function تعریف کرد که هنگام وقوع یک رویداد (event) این تابع اجرا شود.که در اینجا ا سه function تعریف شده که به ترتیب برای متوقف کردن ، نمایش و start می باشد.</li>
+		&nbsp; <li>تابع<xmp>stopclock()</xmp> هنگامی که  ساعت کار نکند(متوقف شده باشد) اجرا می گردد.</li>
+		&nbsp; <li>در تابع <xmp>showtime()</xmp> متغیرهایی برای دریافت تاریخ ، ساعت،دقیق و ثانیه تعریف شده.</li>
+		&nbsp; <li>در متغیر timeValue بررسی می شود که ساعت از دوازده گذشته یا خیر،که اگر گذشته بود ساعت منهای دوازده می شود و مقدار PM نیز برایش تنظیم می گردد.</li>
+		&nbsp; <li>بررسی می شود که اگر ثانیه و دقیقه کمتر از ده باشد به جای رقم دهگان عدد صفر جایگزین شود.</li>
+		&nbsp; <li>در نهایت ساعت نمایش داده شده باید با ساعت نمایشگر ست شود.</li>
+		&nbsp; <li>تابع <xmp>startclock()</xmp> هنگامی که کار ساعت متوقف شده باشد اجرا می گردد.</li>
+		&nbsp; <li>در تگ آغازین<xmp><body></body></xmp> در هریگ از صفحات HTML  نیز این کد<xmp>onload="startclock(); timerONE=window.setTimeout" </xmp>اضافه شده تا امکان نمایش ساعت و تنظیم ساعت مطابق ساعت ویندوز (نمایشگر) فراهم گردد.</li>
+		&nbsp; <li>در پایان برای آنکه ساعت را نمایش دهیم در مکان دلخواه کد <xmp><form name="clock" onsubmit="0"><input type="text" name="face" size="13" value=""></xmp> اضافه کنیم.که در این کد ابتدا یک فرم بسیار کوچک کوچک ایجاد شده که از کد جاوااسکریپت ساعت را توسط input <br>گرفته و نمایش می دهد.</li>
+		</ul>
+		
+
+		<br><br>&nbsp;&nbsp;&nbsp;<font size="3" color="brown" face="tahoma"> ◙ &nbsp;توضیح کدهای CSS(Cascade Style Sheet):</font><br>
+		<br>&nbsp;&nbsp;برای مشخص کردن تنظیمات مرتبط به متن،جدول و تصویر در کدهای HTML،style تعریف می شود.که میتواند به صورت یک فایل جداگانه با پسوند .css ایجاد و ذخیره شود یا به صورت داخلی و درون کدهای HTML تعریف شود.<br>
+		<font size ="3" color ="purple" face ="tahoma , Arial" align="right">
+		<xmp>
+		body{
+ 
+   		 background-color:#FFBBCC;
+   		 font-size:15pt;
+  		  text-align:center;
+  		  }
+   		 .item1{
+   		 font-family: tahoma,b roya;
+  		  font-weight:bold;
+   		 color:#8F0210;
+  		}
+  		.item2{
+    		background-color:light yellow;
+   		 font-size:10pt;
+  		  }
+   		 .item3{
+   		 font-family: Arial Narrow,tahoma;
+    		font-weight:italic;
+ 		 }
+  		  .item4{
+		dir=ltr;
+		text-align:left;
+		font-weight:italic;
+		color:#FF501111;
+  		}
+		</xmp>
+		</font>
+		<ul>
+		&nbsp; <li>برای استفاده از یک style sheet خارجی باید در قسمت head و با استفاده از تگ link این فایل را معرفی کنیم.<xmp><link rel="stylesheet" type="text/CSS" href="myStyle.CSS" /> </xmp> در قسمت href آدرس نسبی فایل css را قرار می دهیم.</li>
+		&nbsp; <li>در قسمت body ، attributeهای تگ های شناخته شده HTML را می توان تعریف کرد.</li>
+		&nbsp; <li>علاوه بر attribute های تگ های شناخته شده HTML در CSS می توان کلاس های جدیدی تعریف کرد.برای تعریف این دسته ها و کلاس های جدید باید قبل از نام آنها کاراکتر نقطه را قرار داد.اما هنگام هنگام استفاده از این کلاس ها نیازی به قرار دادن آن نقطه نیست.</li>
+		&nbsp; <li>خصوصیت font-family برای تعریف نوع قلم برای نوشتن متن استفاده می شود.</li>
+		&nbsp; <li>خصوصیت font-weight برای ضخامت قلم مورد استفاده قرار می گیرد.</li>
+		&nbsp; <li>خصوصیت font-size سایز قلم متن را مشخص می کند.</li>
+		&nbsp; <li>خصوصیت text-align نحوه تراز بندی عنصر را در عنصر دربرگیرنده آن تعیین می کند.</li>
+		&nbsp; <li>خصوصیت color رنگ قلم نوشته را مشخص می کند.</li>
+		</ul>
+
+		<br><br>&nbsp;&nbsp;&nbsp;<font size="3" color="brown" face="tahoma"> ◙ &nbsp;توضیح کدهای mail.php:</font><br>
+		<br>&nbsp;&nbsp;برای آنکه کد php در صفحات وب اجرا گردد باید صفحات htmlو کدهای php در فایل دایرکتوری wamp و یا در محل نصب xamp  و درون فایل htdocs کپی گردند. <br>
+		&nbsp;&nbsp;در اینصورت در بروزری که برای این نرم افزار ها شناخته شده است (در این پروژه) localhost/Home.html سرچ می شود و چون صفحات طراحی شده باهم در ارتباط هستند در نتیجه به راحتی می توان به سایر صفحات نیز دسترسی داشت.<br>
+		&nbsp;&nbsp;یک فایل php می تواند شامل تگ های html  نیز باشد،اما فایل حاوی کد php چه به صورت تنها و یا ترکیبی با html با پسوند .php ذخیره می گردد.کدهای php در تگ <xmp><?php&nbsp;&nbsp;?> </xmp>تعریف می شوند.<br>
+
+		<font size ="3" color ="purple" face ="tahoma , Arial" align="right">
+
+		<xmp>
+		<html>
+		<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<title>تماس با ما</title>
+		</head>
+		<body style="font-family:tahoma; font-size:12px">
+		<?php
+		@$ip= $_SERVER['REMOTE_ADDR'];
+
+		@$Name = addslashes($_POST['Name']);
+
+		@$EMail = addslashes($_POST['E-Mail']);
+
+		@$Title = addslashes($_POST['Title']);
+
+		@$Message = addslashes($_POST['Message']);
+
+		if (strlen($Name) == 0 )
+
+		{
+
+		die("لطفا نام و نام خانوادگی خود را وارد نمایید");
+
+		}
+
+		if (! preg_match('/^[_a-z0-9-]+(\.[_a-z0-9-]+)*@[a-z0-9-]+(\.[a-z0-9-]+)*(\.[a-z]{2,3})$/', $EMail))
+
+		{
+
+		die("آدرس پست الکترونیک شما معتبر نمی باشد لطفا آن را بررسی نموده و دوباره امتحان کنید");
+
+		}
+
+		if (strlen($EMail) == 0 )
+
+		{
+
+		die("لطفا آدرس پست الکترونیک خود را وارد نمایید");
+
+		}
+
+		if(strlen($Message)==0)
+
+		{
+
+		die("لطفا متن پیام را وارد نمایید");
+
+		}
+
+		$header = "From: $EMail\n"
+
+		. "Reply-To: $EMail\n";
+		$header .= "Content-Type: text/html; charset=UTF-8\n";
+		$subject = '=?UTF-8?B?'.base64_encode($Title).'?=';
+		$email_to = "elhamsoltani1373@gmail.com";
+		$message = "آی پی مخاطب: $ip"."<br />"
+
+		. "نام و نام خانوادگی: $Name"."<br>"
+
+		. "پست الکترونیک: $EMail"."<br>"
+
+		. "موضوع پیام: $Title"."<br>"
+
+		. "متن پیام: $Message"."<br>";
+
+		@mail($email_to, $subject ,$message ,$header ) ;
+
+		echo("☺☺ .با تشکر ، پیام شما با موفقیت ارسال گردید");
+
+		?>
+		</body>
+		</html>
+
+		</xmp>
+		</font>
+		<ul>
+		&nbsp; <li>در ابتدا متغیرهایی که ازفرم دیافت می شوند،تعریف شده که به ترتیب متغیر دریافت IP مخاطب،متغیر دریافت نام و نام خانوادگی ،متغیر دریافت پست الکترونیکی مخاطب،متغیر دریافت موضوع پیام،متغیر دریافت متن پیام می باشد.</li>
+		&nbsp; <li>سپس فیلدها به ترتیب اعتبار سنجی شده تا پرکردن این فیلدها اجباری باشد.</li>
+		&nbsp; <li>اعتبار سنجی اینکه فیلد نام و نام خانوادگی خالی نباشد.</li>
+		&nbsp; <li>اعتبار سنجی پست الکترونیک که ساختار پست الکترونیک وارد شده را بررسی می کند.</li>
+		&nbsp; <li>اعتبار سنجی اینکه متن پیام وارد شده باشد.</li>
+		&nbsp; <li>در نهایت بخش ارسال مشخصات به ایمیل  صاحب وبسایت از طریق تابع mail ارسال می گردد. از کاراکتر نقطه نیز برای به هم چسباندن اطلاعات استفاده می شود.</li>
+		&nbsp; <li>درصورتی که فرم به درستی تکمیل شده باشد پیام (با تشکر ، پیام شما با موفقیت ارسال گردید. ☺☺) برای مخاطب نمایش داده می شود</li>
+		</ul>
+
+		
+		
+
+
+		<br><br>&nbsp;&nbsp;&nbsp;<font size="3" color="brown" face="tahoma"> ◙ &nbsp;ذکر برخی نکات مربوط به کدهای Document</font><br>
+		<br>&nbsp;&nbsp;<br>
+		<ul>
+		&nbsp; <li>برای آنکه تکه کدی از HTML را عینا در صفحه نمایش دهیم از تگ xmp استفاده می شود. </li>
+		&nbsp; <li>چون سایر کدهای این صفحه مانند دو صفحه قبل است،در نتیجه توضیح خاصی ندارد. </li>
+		</ul>
+		<br><br>&nbsp;&nbsp;&nbsp;<font size="3" color="green" face="tahoma"> ◙ &nbsp; نکات اجرای این پروژه</font><br>
+		<ul>
+		&nbsp; <li>برای اینکه تمام بخش های پروژه به درستی کار کند ، باید تمام فایل ها در پوشه htdocs در xamp و یا در پوشه www در wamp کپی شوند.</li>
+		&nbsp; <li>در بروزری که این سرورهای محلی نصب شده،localhost/Home.html سرچ شود.</li>
+		&nbsp; <li>چون کد php برای استفاده از دکمه صفحه لاگین وجود ندارد در نتیجه دسترس به فایل داکیومنت از طریق لینک (دسترسی به داکیومنت بدون رمز عبور) فراهم شده است.</li>
+		</ul>
+		<br><br><br>	
+	
+		</td> 
+     </tr>
+
+	 </background></font>
+	 <tr bgcolor="#FFFFCC"><td colspan="2"><background class="item"><font class="item1"><center>Designed by Elham Soltani@2018</center><br>
+ 
+	<center>
+                     <form name="clock" onsubmit="0">
+                     <input type="text" name="face" size="13" value="" >
+        </center>
+     </background></font>
+	</td>
+     </tr>
+    </table>
+   </body>
+
+</html>

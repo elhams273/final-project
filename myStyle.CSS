@@ -1,0 +1,25 @@
+  body{
+ 
+    background-color:#FFBBCC;
+    font-size:25pt;
+    text-align:center;
+    }
+    .item1{
+    font-family: tahoma,Arial;
+    font-weight:bold;
+    color:#8F0210;
+  }
+  .item2{
+    background-color:light yellow;
+    font-size:10pt;
+    }
+    .item3{
+    font-family: Arial Narrow,tahoma;
+    font-weight:italic;
+  }
+    .item4{
+	dir=ltr;
+	text-align:left;
+	font-weight:italic;
+	color:#FF501111;
+  }
